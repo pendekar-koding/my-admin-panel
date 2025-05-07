@@ -21,12 +21,12 @@ class Auth extends BaseController
         $userModel = new UserModel();
         $user = $userModel->where('username', $username)->first();
 
-        if ($user && password_verify($password, $user->password)) {
+        if ($user!== null && password_verify($password, $user['password'])) {
             session()->set('isLoggedIn', true);
             session()->set('username', $username);
-            session()->set('full_name', $user->full_name);
-            session()->set('email', $user->email);
-            session()->set('user_id', $user->id);
+            session()->set('full_name', $user['full_name']);
+            session()->set('email', $user['email']);
+            session()->set('user_id', $user['id']);
             return redirect()->to('/dashboard');
         } else {
             return redirect()->to('/login')->with('error', 'Username atau password salah.');

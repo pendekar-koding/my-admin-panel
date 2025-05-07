@@ -3,8 +3,8 @@
 
 <div class="content-wrapper">
     <section class="content p-3">
-        <h1>Dashboard</h1>
-        <p>Welcome to the dashboard.</p>
+        <h1>Users</h1>
+        <p>Daftar user akan ditampilkan di sini.</p>
     </section>
 </div>
 
