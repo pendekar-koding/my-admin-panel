@@ -9,6 +9,7 @@ use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
 use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
+use JwtAuth;
 
 class Filters extends BaseConfig
 {
@@ -26,6 +27,7 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'authGuard'     => AuthGuard::class,
+        'auth'          => JwtAuth::class,
     ];
 
     /**

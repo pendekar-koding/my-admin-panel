@@ -9,13 +9,13 @@
         <nav>
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
                 <li class="nav-item">
-                    <a href="<?= base_url('/dashboard') ?>" class="nav-link">
+                    <a href="<?= base_url('/web/dashboard') ?>" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url('/users') ?>" class="nav-link">
+                    <a href="<?= base_url('/web/users') ?>" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>Users</p>
                     </a>
@@ -23,7 +23,7 @@
 
 
                 <li class="nav-item">
-                    <a href="<?= base_url('/logout') ?>" class="nav-link">
+                    <a href="<?= base_url('/web/logout') ?>" class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>Logout</p>
                     </a>

@@ -27,7 +27,7 @@ class Auth extends BaseController
             session()->set('full_name', $user['full_name']);
             session()->set('email', $user['email']);
             session()->set('user_id', $user['id']);
-            return redirect()->to('/dashboard');
+            return redirect()->to('/web/dashboard');
         } else {
             return redirect()->to('/login')->with('error', 'Username atau password salah.');
         }
